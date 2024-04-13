@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Список пользователей</title>
 </head>
 <body>
-
+<h1>Добро пожаловать в систему список задач</h1>
+    <h2>Пользователи:</h2>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task }}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>

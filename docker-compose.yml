@@ -1,13 +1,13 @@
 version: '3'
 
 services:
-  tasks-service:
+  tasks_service:
     build:
       context: ./tasks
     ports:
       - "5001:5001"
 
-  users-service:
+  users_service:
     build:
       context: ./users
     ports:
@@ -19,5 +19,5 @@ services:
     ports:
       - "5000:5000"
     depends_on:
-      - tasks-service
-      - users-service
+      - tasks_service
+      - users_service

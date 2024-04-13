@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Список задач</title>
 </head>
 <body>
-
+<h1>Добро пожаловать в систему список задач</h1>
+    <h2>Задачи:</h2>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task }}</li>
+        {% endfor %}
+    </ul>
+    <br>
+    <form id="newTask">
+        <label for="NewTask">Новая задача:</label><br>
+        <input type="text" id="description" value=""><br>
+        <input type="submit" value="Добавить" id="enable">
+    </form>
 </body>
 </html>

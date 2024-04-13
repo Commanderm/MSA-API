@@ -4,28 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aee4037a-d0b2-409b-a420-a5987d35fdfe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/MSA-API.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/task_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/unit-test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/user_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/tasks.html" afterDir="false" />
+    <list default="true" id="aee4037a-d0b2-409b-a420-a5987d35fdfe" name="Changes" comment="Initial Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/tasks.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +41,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "Docker.docker-compose.yml.tasks-service: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
     "Docker.tasks/Dockerfile.executor": "Run",
     "Docker.users/Dockerfile.executor": "Run",
@@ -74,7 +59,7 @@
       <recent name="$PROJECT_DIR$/web/templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in unit-test.py">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml" />
       <method v="2" />
@@ -91,37 +76,28 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.tasks-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="tasks-service" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="tasks/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="tasks/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for unit-test.TestTaskService" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="MSA-API" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tasks" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tasks/task_service.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for unit-test.TestTaskService.test_create_task" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="MSA-API" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tasks" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;unit-test.TestTaskService.test_create_task&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests in task_service.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="MSA-API" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.tasks-service: Compose Deployment" />
+        <item itemvalue="Docker.tasks/Dockerfile" />
         <item itemvalue="Python tests.Python tests in unit-test.py" />
         <item itemvalue="Python tests.Python tests for unit-test.TestTaskService" />
-        <item itemvalue="Python tests.Python tests for unit-test.TestTaskService.test_create_task" />
-        <item itemvalue="Python tests.Python tests in task_service.py" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -177,6 +153,19 @@
       <option name="presentableId" value="Default" />
       <updated>1712989196299</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1712993494803</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712993494803</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
 </project>

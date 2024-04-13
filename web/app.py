@@ -4,8 +4,8 @@ import requests
 
 app = Flask(__name__)
 
-TASK_SERVICE_URL = 'http://task_service:5001'
-USER_SERVICE_URL = 'http://user_service:5002'
+TASK_SERVICE_URL = 'http://tasks_service:5001'
+USER_SERVICE_URL = 'http://users_service:5002'
 
 @app.route('/')
 def index():
